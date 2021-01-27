@@ -8,7 +8,6 @@ idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.2
 kik==1.5.0
-kik-unofficial @ file:///Users/ivo/Documents/kikapi/kik-bot-api-unofficial
 lxml==4.6.2
 MarkupSafe==1.1.1
 pbkdf2==1.3
