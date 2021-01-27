@@ -1,0 +1,1 @@
+worker: python etybot.py
