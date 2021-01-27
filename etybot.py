@@ -8,7 +8,7 @@ from wikt import WiktionarySearch
 app = Flask(__name__)
 kik = KikApi("etybot", "f893db5d-df38-4e44-ae39-8304a7b71c81")
 
-kik.set_configuration(Configuration(webhook="https://perfect-mouse-61.loca.lt/incoming"))
+kik.set_configuration(Configuration(webhook="https://etymologybot.herokuapp.com/incoming"))
 
 @app.route('/incoming', methods=['POST'])
 def incoming():
