@@ -4,11 +4,12 @@ from kik import KikApi, Configuration
 from kik.messages import messages_from_json, TextMessage
 
 from wikt import WiktionarySearch
-
+import os
+from os import environ
 app = Flask(__name__)
-kik = KikApi("etybot", "f893db5d-df38-4e44-ae39-8304a7b71c81")
+kik = KikApi("etybot", environ['BOT_API_KEY'])
 
-kik.set_configuration(Configuration(webhook="https://etymologybot.herokuapp.com/incoming"))
+kik.set_configuration(Configuration(webhook=environ['WEBHOOK']))
 
 @app.route('/incoming', methods=['POST'])
 def incoming():
